@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Getting Values from fields</title>
+    </head>
+    <body>
+        <h1>JS Getting Values from fields</h1>
+        Enter Name: <input type="text" id="foo" placeholder="John Doe"/>
+        <button onclick='getValue()'>GET VALUE</button>
+
+        <div class="tag">
+                <header>
+                  <div class="hello">
+                    Hello
+                  </div>
+               
+                
+                <div class="mynameis">
+                  My name is
+                </div>
+                </header>
+
+        <div class="name">
+        <p id="boo"></p>
+        </div>
+
+        <script>
+            function getValue(){
+                var y = document.getElementById("boo");
+                var x = document.getElementById("foo").value;
+                y.innerHTML= x;
+            }
+        </script>
+    </body>
+</html>
