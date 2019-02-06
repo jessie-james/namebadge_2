@@ -1,7 +1,6 @@
-<script>
+   
 function getValue(){
-    var y = document.getElementById("boo");
-    var x = document.getElementById("foo").value;
-    y.innerHTML= x;
+    var displayName_id = document.getElementById("display-name");
+    var changeName_id = document.getElementById("change-name").value;
+    displayName_id.innerHTML= changeName_id;
 }
-</script>

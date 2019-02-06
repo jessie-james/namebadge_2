@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JS Getting Values from fields</title>
+        <link rel="stylesheet" href="/Users/snowmitchell/webdev/Helio/Practice/namebadge/Namebadge_2/styles.css">
+        <title>Namebade 2</title>
     </head>
-    <body>
-        <h1>JS Getting Values from fields</h1>
-        Enter Name: <input type="text" id="foo" placeholder="John Doe"/>
-        <button onclick='getValue()'>GET VALUE</button>
+    <nav>
+            <h1>Introduce yourself</h1>
+            Enter Name: <input type="text" id="change-name" placeholder="John Doe"/>
+            <button onclick='getValue()'>Submit</button>
+    </nav>
 
+    <body>
+       
         <div class="tag">
                 <header>
                   <div class="hello">
@@ -21,15 +25,11 @@
                 </header>
 
         <div class="name">
-        <p id="boo"></p>
+        <p id="display-name"></p>
         </div>
 
-        <script>
-            function getValue(){
-                var y = document.getElementById("boo");
-                var x = document.getElementById("foo").value;
-                y.innerHTML= x;
-            }
-        </script>
+        <div class="solid"></div>
+
+        <script> src="/Users/snowmitchell/webdev/Helio/Practice/namebadge/Namebadge_2/script.js"</script>
     </body>
 </html>
