@@ -1,32 +1,34 @@
 ////////data problem 9 ////////////////////////////////////////
-Instructions
-
-Make a function called favFood that does not take in any parameters.
-The function should return a string that has a value of  "My favorite food is pizza"
+"Instructions"
+"Make a function called favFood that does not take in any parameters.
+"The function should return a string that has a value of  "My favorite food is pizza"
 Instead of explicitly typing "pizza", make reference to the existing variable called food.
 
 Use template strings.
-Do not use concatenation ("My favorite food is " + food)
+Do not use concatenation ("My favorite food is " + food)""
 ///////////////////////////////////////////////////////////////////
 
 var food = "pizza";
 function favFood() {
  return "My favorite food is" + food;
 }
+
 /////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
 ////////////// Function Practice Problem 6/////////////////
-Instructions from your teacher:
+Instructions:
 Create a function called makeExercise that has two parameters-- exerciseName(string) and duration(number).
 The function should return an object with two key-value pairs. The first property name should be "exerciseName" with a value of the first parameter. The second property name should be "duration" with a value of the second parameter.
 //////////////////////////////////////////////
+
 var makeExercise = {
    exerciseName: exerciseName,
    duration: duration,
  };
  return makeExercise.exerciseName(duration);
 }
+
 /////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 
