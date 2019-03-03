@@ -4,3 +4,4 @@ function getValue(){
     var changeName_id = document.getElementById("change-name").value;
     displayName_id.innerHTML= changeName_id;
 }
+..
