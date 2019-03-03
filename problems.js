@@ -22,10 +22,11 @@ function favFood() {
 //The function should return an object with two key-value pairs. The first property name should be "exerciseName" with a value of the first parameter. The second property name should be "duration" with a value of the second parameter.
 //////////////////////////////////////////////
 
-var makeExercise = {
+function makeExercise (exerciseName, duration) {
+  var makeIt = { 
    exerciseName: exerciseName,
    duration: duration,
- };
+  };
  return makeExercise.exerciseName(duration);
 }
 
