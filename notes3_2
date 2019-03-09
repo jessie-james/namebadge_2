@@ -1,0 +1,277 @@
+var hunger;
+var fatigue;
+
+function eat(){
+  hunger = "gone";
+  return "yum yum";
+}
+
+function sleep(){
+  fatigue = "gone";
+  return "zzz zzz zzz";
+}
+
+function decisionMaker(hungry, tired) {
+  if(hungry === true && tired === false) {
+    eat();
+  }
+  else if(hungry === false && tired === true) {
+    sleep();
+  }
+  else {
+      return "undecided";
+  }
+}
+
+
+git init to start git
+save by commad s 
+git remote add orgin of respository HTTP
+git status = seeing changes/ commits or branches you are located init
+
+changes in case its needed
+  var vern = " he is greate";
+
+
+Look up console .log
+
+
+truthly fallse
+
+
+falsy  means the condtion will fail
+ truthy = turth by default
+
+ null undefined 0 false NAN
+
+
+ const falsy = null;
+const falsy1 = undefined;
+const falsy2 = 0;
+const falsy3 = false;
+const falsy4 = '';
+const falsy5 = NaN;
+ other wise it will be true!
+
+
+
+// // Nouns adjective and verbs.
+
+// ///Basic Data Types
+// 'abc' "abc" `abc` ///strings
+// 10 //numbers
+//     /// ====> Int, Float 
+// true false //booleans
+
+// null undefined /// Valueless 
+
+// NaN /// Not A Number. 
+
+// {} //Object nouns
+// [] //arrays lists 
+
+// Josh
+const josh = {
+  height: `5'11`,
+  weight: '180',
+  eyeColor: 'blue',
+  age: 26,
+  birthday:'11/05/1992',
+  email:'veryjoshua@gmail.com',
+  isMale: true,
+  isFemale: false,
+  livesInUSA: true,
+  address:{
+      street: '6020 roseate spoonbill Drive',
+      city: 'Windermere',
+        state: 'Florida',
+        ZipCode: '34786'
+  },
+  myFavoriteFoods:[`Pizza`, `Steak`, `Tamales`, `pozole`],
+  myFamilyMembers:[
+      {
+          name:'Lauren',
+          age: 22,
+          relationship:'Spouse'
+      },
+      {
+        name:'Eli',
+        age: 1,
+        relationship:'Child'
+    },
+  ],
+  addPostive: function(num1, num2) {
+        if(num1 > num2){
+            return num1 - num2;
+        }else{
+            return num2 - num1
+        }
+    }, 
+}
+
+// > greater than
+// < less than
+// === equal to 
+// !== not equal to
+// && both condition have to be true
+// || either or have to be true. 
+
+
+
+
+
+console.log(josh.addPostive(1,2))
+// const name = 'josh';
+// const isTrue = false;
+// const age = 26
+// const arr = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ];
+// const dan = {
+//     isAmazingProgrammer: true,
+// }
+
+// const inSideArr = arr[2]
+
+// console.log(inSideArr[1])
+
+// /// variables 
+// var //es5
+// let // es6 let me change what it points to. 
+// const //es6 constant 
+
+
+// switch vs if else
+ // when you condition is all the same you use switch
+
+
+ const name = 'joshua'
+
+if(name === 'josh'){
+    console.log("Hello josh");
+}else if(name === 'dan'){
+    console.log("Welcome Dan");
+}else{
+    console.log("We don't know you");
+}
+
+switch(name){
+    case 'josh' : 
+        console.log("Hello josh");
+        break;
+    case 'Dan' :
+        console.log("Welcome Dan");
+        break;  
+    default: 
+        console.log("We don't know you");
+        break;
+}
+
+TURNINARY STATMETNS = if else the differenace is 
+
+Use ternary operators to set a value to a variable, or to reduce code if necessary.
+const age = -1;
+
+//Ternary
+
+const ageIsGreaterThanOne = (age) => {
+    if(age > 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+const ageIsGreaterThanOne2 = (age) => {
+    return age > 0 ? true : false;
+}
+
+console.log(ageIsGreaterThanOne2(-1))
+
+
+ARRAYS!!!
+console.log(josh.myFavoriteFoods)
+josh.myFavoriteFoods.push('tacos')
+console.log(josh.myFavoriteFoods)
+josh.myFavoriteFoods.unshift('watermelon')
+console.log(josh.myFavoriteFoods)
+josh.myFavoriteFoods[0] = "Chicken Nudgets";
+console.log(josh.myFavoriteFoods)
+
+
+
+LOOPS 
+
+for loop
+-console.log(josh.myFavoriteFoods);
+console.log(josh.myFavoriteFoods.length);
+
+const doesThisPersonLikePizza = (arr) => {
+    let answer = false;
+    console.log(arr)
+
+    for(let i = 0; i < arr.length; i++){
+
+        console.log(i)
+        if(arr[i] === "Pizza"){
+            answer = true;
+        }
+    }
+
+    return answer;
+}
+
+console.log(doesThisPersonLikePizza(josh.myFavoriteFoods))
+
+
+
+While loop
+//firstParam = indexToStartAt
+//secondParam = how many things to remove default is everything
+//thirdParam = thing to add
+josh.myFavoriteFoods.splice(0, 0, 'other Thing');
+console.log(josh.myFavoriteFoods)
+
+
+Call backs 
+
+const caculate = (num1, num2, operatorFunc) => {
+    num1+=10;
+    num2+=10;
+    const answer = operatorFunc(num1, num2);
+    return answer;
+}
+
+const add = (num1, num2) => {
+    return num1 + num2;
+}
+
+const subtract = (num1, num2) => {
+    return num1 - num2;
+}
+
+const multiply = (num1, num2) => {
+    console.log(num1)
+    return num1 * num2;
+}
+
+const divide = (num1, num2) => {
+    return num1 / num2;
+}
+
+console.log(caculate(3, 3, multiply))
+
+
+
+TIMEEEEESSS
+const time = () => {
+    console.log('this ran first')
+    const cb = () => {
+        console.log('I waited a second')
+    }
+    setTimeout(cb, 5000)
+}
+
+time()
